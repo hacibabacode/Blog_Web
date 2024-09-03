@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anıl Hacıbaba</title>
+
+  <!-- 
+    - favicon
+  -->
+   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> 
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./backend/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">THE HACIBABA<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang">
+          <option value="en">Tr</option>
+          <option value="ar">En</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#AnaSayfa" class="navbar-link">Ana Sayfa</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Hakkımda</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Yetenek</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Profil</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Bağlantı</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="AnaSayfa">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./backend/images/hacibaba.jpeg" media="(min-width: 568px)">
+            <source srcset="./backend/images/hacibaba.jpeg" media="(min-width: 300px)">
+            <img src="./backend/images/hacibaba.jpeg" alt="Profil Fotografı"
+              class="w-100">
+          </picture>
+          
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Software Developer</h2>
+
+          <a href="#contact" class="btn btn-primary">Temasa Geç</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link" onclick="window.location.href='//github.com/hacibabacode'; return false;">
+              <ion-icon name="logo-github"></ion-icon>
+
+              <div class="tooltip">Github</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link" onclick="window.location.href='//instagram.com/thehacibaba/'; return false;">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <div class="tooltip">Instangram</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link" onclick="window.location.href='//linkedin.com/in/anil-hacibaba/'; return false;">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Kaydırma</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./backend/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+              
+              <h2 class="h2 card-title">
+                2+ <strong>Deneyim</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./backend/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                13+ <strong>Tamamlanan Projeler</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./backend/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                3+ <strong>Geliştirilen Projeler</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./backend/images/hacibaba1.jpeg" 
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">Hakkımda</p>
+
+          <h2 class="h3 section-title">Mühendislik ve hedeflerim nelerdir?</h2>
+
+          <p class="section-text">
+            Bilgisayar Mühendisiyim,her alanda bilgi öğrenmeye hevesliyim. İyi ve yaratıcı bir yazılımcı olmak istiyorum. Takım Çalışmasının önemli
+            olduğuna inanıyorum. Donanımsal ve Yazılım dilleri olarak kendimi  geliştirmeye önem veriyorum.
+            Daha iyi bir yazılımcı olmak için mücadele ediyorum.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Takip Et</button>
+
+            <button class="btn btn-primary">CV İndir</button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Yetenekler</p>
+
+          <h2 class="h3 section-title">Yazılım Program Dilleri</h2>
+
+          <p class="section-text">
+            Bilgisayar mühendisi olarak hem yazılım hemde donanımsal anlamda kendimi geliştirmeye açık biriyim. 
+            Her zaman yeni teknolojileri ayak uydurmaya önem gösteriyorum ve daha iyi bir mühendis olmak için çabalıyorum. 
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Yetenekler</button>
+
+            <button class="toggle-btn" data-toggle-btn>Programlar</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SQL</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/sql.png" alt="SQL logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Java</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/java.png "alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/C.png" alt="C logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/python.png" alt="Python logo">
+                </div>
+              </div>
+            </li>
+
+
+            
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+           
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Komut Satırı</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Design Patterns</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/Design Patterns.png" alt="Design Patterns logo">
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Eclipse</div>
+
+                <div class="card-icon">
+                  <img src="./backend/images/Eclipse.png" alt="Eclipse logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Benim işim</p>
+
+              <h2 class="h3 section-title">Sizi Şaşırtacak Çalışmalarıma Bakın!</h2>
+
+              <p class="section-text">
+               Üniversite ve sonrasında geliştirdiğim projeler ve çalışmalarıma göz atabilirsiniz.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card" onclick="window.location.href='//github.com/hacibabacode/AquarisHospital'; return false;">
+
+              <figure class="card-banner">
+                <img src="./backend/images/project-1.png" class="w-100" >
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Hasta Randevu Sistemi</h3>
+
+                <time class="publish-date" datetime="2022-04">Eylül 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card" onclick="window.location.href='//github.com/hacibabacode/-Sifreleme'; return false;">
+
+              <figure class="card-banner">
+                <img src="./backend/images/project-2.png" class="w-100" >
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Java Encryption Decryption </h3>
+
+                <time class="publish-date" datetime="2022-04">Eylül 2020</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner" onclick="window.location.href='//github.com/hacibabacode/University_login'; return false;">
+                <img src="./backend/images/project-3.png" class="w-100"
+                  >
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Üniversite Login Giriş</h3>
+
+                <time class="publish-date" datetime="2022-04">Eylül 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card" onclick="window.location.href='//github.com/hacibabacode/geometrik-sekillerin-matematiksel-hesaplama'; return false;">
+
+              <figure class="card-banner" >
+                <img src="./backend/images/project-3.jpg" class="w-100">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Geometrik Şekilleri Hesaplanması</h3>
+
+                <time class="publish-date" datetime="2022-04">Eylül 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card" onclick="window.location.href='//github.com/hacibabacode/Oyun'; return false;">
+
+              <figure class="card-banner">
+                <img src="./backend/images/project-4.png" class="w-100" >
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Kart Bulma Oyunu</h3>
+
+                <time class="publish-date" datetime="2022-04">Eylül 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <button class="load-more" onclick="window.location.href='//github.com/hacibabacode'; return false;">Load more work</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Bağlantı</p>
+
+          <h2 class="h3 section-title">Projen Var mı? Lütfen Mesaj Bırakın</h2>
+
+          <p class="section-text">
+            İletişime geçin ve nasıl yardımcı olabileceğimi bana bildirin. Formu doldurun, en kısa zamanda sizinle iletişime geçeceğim.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Adres:</h3>
+
+                <address class="contact-info">
+                  İstanbul/Türkiye
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Telefon:</h3>
+
+                <a href="tel:(534)6006898" class="contact-info">(534) 600 68 98</a>
+
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">E-mail:</h3>
+
+                <a href="mailto:info@thehacibaba@outlook.com" class="contact-info">thehacibaba@outlook.com</a>
+
+                <a href="mailto:support@anilhacibaba41@gmail.com" class="contact-info">anilhacibaba41@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                
+                <li>
+                  <a href="#" class="contact-social-link" onclick="window.location.href='//github.com/hacibabacode'; return false;">
+                    <div class="tooltip">Github</div>
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link" onclick="window.location.href='//instagram.com/thehacibaba/'; return false;">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link" onclick="window.location.href='//linkedin.com/in/anil-hacibaba/'; return false;">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="isim" class="form-label">İsim</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="isim" id="isim" required placeholder="ö.g ANIL HACIBABA" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="ö.g anilhacibaba@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="telefon" class="form-label">Telefon</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="telefon" id="telefon" required placeholder="Telefon Numarası" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="mesaj" class="form-label">Mesaj</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="mesaj" id="mesaj" required placeholder="Mesaj yazın..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Gönder</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+         THE HACIBABA<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 <a href="#">THE HACIBABA</a>. 
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./backend/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
